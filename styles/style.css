@@ -12,10 +12,12 @@ html {
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
-  color: #fff;
+  background-color: #1b1919;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
-  background-color: #1b1919;
 }
 
 h1,
@@ -35,18 +37,6 @@ fieldset {
 ul,
 ol {
   list-style: none;
-}
-
-.page {
-  display: flex;
-  align-items: center;
-  margin: auto;
-  color: #FFFFFF;
-  font-family: 'Fira Sans Condensed', sans-serif;
-  font-size: 18px;
-  background-color: #1B1919;
-  inline-size: 1200px;
-  block-size: 100%;
 }
 
 .content {
