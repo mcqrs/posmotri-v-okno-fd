@@ -42,7 +42,7 @@ ol {
 .content {
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-template-rows: 48px 456px;
+  grid-template-rows: auto auto;
   grid-auto-flow: row;
   gap: 30px;
   margin: 0px 30px;
@@ -59,7 +59,14 @@ ol {
   position: relative;
   grid-column: span 2;
   grid-row: 2;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
+}
+
+.eror {
+  grid-column: span 2;
+  grid-row: 2;
+  margin-bottom: 10px;
+  inline-size: 711px;
 }
 
 .result__video {
@@ -92,7 +99,7 @@ ol {
   cursor: pointer;
 }
 
-.search-form__label:hover {
+.search-form__label:hover .search-form__label-text{
   text-decoration: underline 1px #FFF;
   text-underline-offset: 5px;
 }
@@ -103,12 +110,12 @@ ol {
 }
 
 .search-form__textfield {
-  border-top: 1px solid #FFF;
-  border-bottom: 1px solid #FFF;
+  border-top: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
   border-right: none;
   border-left: none;
   padding: 2px 0;
-  color: #FFFFFFB2;
+  color: #FFFFFF;
   appearance: none;
   font-family: inherit;
   font-weight: inherit;
@@ -159,7 +166,7 @@ ol {
 }
 
 .button {
-  border: 1px solid #FFF;
+  border: 1px solid currentColor;
   padding: 6px 0;
   color: #FFF;
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -213,15 +220,14 @@ ol {
   grid-row: span 2;
 }
 
-.content__list::-webkit-scrollbar {
-  display: none;
+.content__list {
+  overflow: auto;
+  inline-size: 399px;
+  block-size: 277px;
 }
 
-.content__list {
+.content__list-container {
   position: relative;
-  overflow-y: scroll;
-  block-size: 279px;
-  scrollbar-width: none;
 }
 
 .content__list-item:not(:last-child) {
@@ -242,6 +248,8 @@ ol {
   line-height: 1;
   text-transform: uppercase;
   text-overflow: ellipsis;
+  white-space: nowrap; 
+  overflow: hidden;
 }
 
 .content__video-card-description {
