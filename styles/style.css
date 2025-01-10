@@ -101,7 +101,7 @@ ol {
   cursor: pointer;
 }
 
-.search-form__label:hover .search-form__label-text{
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline 1px #FFF;
   text-underline-offset: 5px;
 }
@@ -226,7 +226,7 @@ ol {
   overflow: auto;
   inline-size: 399px;
   block-size: 277px;
-  scrollbar-width: auto; 
+  scrollbar-width: auto;
 }
 
 .content__list-container {
