@@ -78,6 +78,7 @@ ol {
 
 .content__video-card-description-container {
   flex-grow: 1;
+  inline-size: 196px;
 }
 
 .search-form {
@@ -89,6 +90,7 @@ ol {
 .search-form__fieldset-title {
   font-weight: 400;
   font-size: 18px;
+  margin-bottom: 3px;
 }
 
 .search-form__label {
@@ -224,6 +226,7 @@ ol {
   overflow: auto;
   inline-size: 399px;
   block-size: 277px;
+  scrollbar-width: auto; 
 }
 
 .content__list-container {
@@ -304,6 +307,7 @@ ol {
 /* Кастомный скроллбар */
 .custom-scrollbar::-webkit-scrollbar {
   width: 4px;
+
 }
 
 .custom-scrollbar::-webkit-scrollbar-track {
