@@ -181,10 +181,6 @@ ol {
   inline-size: 100%;
 }
 
-.more-button {
-  list-style: none;
-}
-
 .button:active {
   background-color: #545050;
 }
@@ -260,7 +256,7 @@ ol {
   line-height: 1;
   text-transform: uppercase;
   text-overflow: ellipsis;
-  white-space: nowrap; 
+  white-space: nowrap;
   overflow: hidden;
   max-inline-size: 196px;
 }
