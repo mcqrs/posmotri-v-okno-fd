@@ -81,6 +81,10 @@ ol {
   inline-size: 196px;
 }
 
+.search-form__fieldset {
+  border: none;
+}
+
 .search-form {
   display: grid;
   grid-template-columns: 225px 215px 194px;
@@ -124,7 +128,7 @@ ol {
   font-size: inherit;
   background-color: transparent;
   inline-size: 225px;
-}
+  }
 
 .search-form__textfield::placeholder {
   color: rgba(255, 255, 255, 0.7);
@@ -224,6 +228,7 @@ ol {
 }
 
 .content__list-container {
+  position: relative;
   display: flex;
   gap: 30px;
   flex-direction: column;
